@@ -1,52 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            block-size: auto;
+            font-family: Roboto;
+        }
+
+        body {
+            color: #ffe6c6;
+            background-color: #332727;
+        }
+
+        nav {
+            background-color: #4e3636;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav li a {
+            display: block;
+            text-decoration: none;
+            padding: 10px 75px;
+            margin: 0px;
+            font-size: 20px;
+            color: #ffe6c6;
+            border-right: 1px solid white;
+        }
+
+        nav li a:hover {
+            background-color: #1a1111;
+        }
+
+        .aboutme {
+            width: 65%;
+            margin: auto;
+            margin-top: 25vh;
+        }
+
+        h1 {
+            width: 100%;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        h2 {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .intropar {
+            text-align: left;
+            font-size: 20px;
+        }
+
+        .profilepic {
+            float: right;
+            margin: 50px;
+
+        }
+
+        .location {
+            float: left;
+            height: 450px;
+            margin: 50px;
+        }
+
+        .pic {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid rgb(11, 9, 9);
+
+        }
+
+        figcaption {
+            font-size: 12px;
+            color: #ffe6c6;
+        }
+
+        .picturebar {
+            padding: 0px;
+            overflow: hidden;
+        }
+
+        .hobbies {
+            text-align: center;
+        }
+
+        .hobbies img {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Container holding the image and the text */
+
+
+        .picturebar li {
+            list-style-type: none;
+            display: inline-block;
+            background-color: ;
+        }
+
+        .pictextcontainer {
+            position: relative;
+            text-align: center;
+            color: #ffe6c6;
+        }
+
+        .imgtext {
+            position: absolute;
+            left: 50%;
+            top: 5%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            width: 98%;
+            height: 25px;
+        }
+
+        .spacer {
+            height: 30px;
+            width: 100%;
+        }
+
+        .formcontainer {
+            width: 100%;
+            margin: auto;
+            background-color: #4e3636;
+        }
+
+        .form {
+            width: 15%;
+            margin: auto;
+            text-align: center;
+        }
+
+        input {
+            margin: 10px;
+        }
+
+        article {
+            text-align: center;
+            width: 100%;
+        }
+
+        h4 {
+            margin: 10px;
+        }
+
+        .github {
+            background-color: #4e3636;
+            text-align: center;
+        }
+
+        .github a {
+            font-size: 32px;
+            padding: 5px;
+            text-decoration: none;
+            color: #ffe6c6;
+            border: 3px solid white;
+            background-color: black;
+        }
+
+        .github a:hover {
+            background-color: white;
+            border: 3px solid black;
+            color: black;
+        }
+
+        .githublogo {
+            margin: 20px;
+        }
+        footer{
+            padding-left: 50px;
+        }
+        #submit{
+            font-size: 26px;
+        }
+    </style>
+
+
+
 </head>
+
 <body>
 
-    <Header>
-        <H1>Dominic Prestia</H1>
+    <nav>
+        <ul>
+            <li><a href="">About Me</a></li>
+            <li><a href="">GitHub</a></li>
+            <li><a href="">Location</a></li>
+            <li><a href="">Hobbies</a></li>
+            <li><a href="">Forum</a></li>
+        </ul>
+    </nav>
+
+
+    <figure class="profilepic">
+        <img class="pic" src="pic_001.jpg" alt="This is an image taken in Japan" width="300">
+        <figcaption>Cherry Blossoms in Japan</figcaption>
+    </figure>
+
+    <figure class="location">
+        <img class="pic"
+            src="https://media2.giphy.com/media/MaV9vHq75mfU59aP9e/giphy.gif?cid=ecf05e47rs2ahr0g12l9y41ce5wtpaf34c6y9dpykzuoz03k&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+            alt="This is a gif of the American flag" width="300" height="400">
+        <figcaption>Location: United States</figcaption>
+    </figure>
+
+
+    <Header class="aboutme">
+        <H1>About Me</H1>
+        <p class="intropar">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam velit a nihil ab odio
+            nostrum vel nesciunt illo, inventore quaerat ea cumque doloremque architecto ratione, quod nemo, possimus
+            porro Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima veniam maxime veritatis, dolor eaque
+            fugiat deleniti officia voluptatum debitis excepturi rem aperiam nisi expedita praesentium beatae quisquam
+            sint. Id, iste.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam velit a nihil ab odio nostrum
+            vel nesciunt illo, inventore quaerat ea cumque doloremque architecto ratione, quod nemo, possimus porro
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima veniam maxime veritatis, dolor eaque fugiat
+            deleniti officia voluptatum debitis excepturi rem aperiam nisi expedita praesentium beatae quisquam sint.
+            Id, iste.</totam>
+        </p>
     </Header>
 
-    <header>
+    <div class="spacer"></div>
+
+    <div class="github">
+        <div class="spacer"></div>
+        <img class="githublogo" src="githublogo.jpg" alt="githublogo" width="200"><br>
+        <a href="https://github.com/DominicPrestia">My GitHub Profile</a>
+        <div class="spacer"></div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="picturebar">
+        <div class="spacer"></div>
+        <H2>Hobbies</H2>
+        <div class="spacer"></div>
+        <ul class="hobbies">
+            <li class="pictextcontainer">
+                <img class="pic" src="rugbyball.jpg" alt="rugby ball" width="300">
+                <div class="imgtext">Rugby</div>
+            </li>
+            <li class="pictextcontainer">
+                <img class="pic" src="biking.jpg" alt="rugby ball" width="300">
+                <div class="imgtext">Biking</div>
+            </li>
+            <li class="pictextcontainer">
+                <img class="pic" src="Travel.jpg" alt="rugby ball" width="300">
+                <div class="imgtext">Travel</div>
+            </li>
+            <li class="pictextcontainer">
+                <img class="pic" src="hiking.jpg" alt="rugby ball" width="300">
+                <div class="imgtext">Hiking</div>
+            </li>
+        </ul>
+        <div class="spacer"></div>
+    </div>
+
+    <div class="spacer"></div>
+
+
+
+    <div class="formcontainer">
+        <div class="spacer"></div>
+        <H2>Forum</H2>
+        <div class="spacer"></div>
+        <form class="form" action="">
+            <label class="labels" for="name">Full Name:</label><br>
+            <input type="text" name="fullName" id="fullName"><br>
+            <label class="labels" for="email">Email Address:</label>
+            <input type="text" name="emailAdd" id="emailAdd">
+        </form>
+
+
+        <article>
+            <h4>Comments</h4>
+            <textarea name="commentbox" id="commentbox" cols="70" rows="10" placeholder="Enter A Comment"></textarea>
+        </article>
+
+        <form class="form" action="">
+            <input type="submit" name="submit" id="submit"><br>
+        </form>
+        <div class="spacer"></div>
+    </div>
+
+
+    <div class="spacer"></div>
+
+    <footer>
+        <p>Author: Dominic Prestia</p>
+    </footer>
+
+    <div class="spacer"></div>
+
+
+    <!-- <header>
         <H2>GitHub:
             <a href="https://github.com/DominicPrestia">My GitHub Profile</a>
         </H2>
-    </header>
-    
-    <header>
+    </header> -->
+
+    <!-- <header>
         <h2>Location: United States</H2>
 
         <figure>
-            <img src="https://media2.giphy.com/media/MaV9vHq75mfU59aP9e/giphy.gif?cid=ecf05e47rs2ahr0g12l9y41ce5wtpaf34c6y9dpykzuoz03k&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="This is a gif of the American flag" width="200">
-        <figcaption>American Flag</figcaption>
-        </figure> 
+            <img src="https://media2.giphy.com/media/MaV9vHq75mfU59aP9e/giphy.gif?cid=ecf05e47rs2ahr0g12l9y41ce5wtpaf34c6y9dpykzuoz03k&ep=v1_gifs_search&rid=giphy.gif&ct=g"
+                alt="This is a gif of the American flag" width="200">
+            <figcaption>American Flag</figcaption>
+        </figure>
     </header>
 
     <header>
-    <H2>Hobbies</H2>
+        <H2>Hobbies</H2>
         <ul>
             <li>Traveling</li>
             <li>Rugby</li>
-            <li>Hiking</li> 
+            <li>Hiking</li>
             <li>Biking</li>
         </ul>
     </header>
-    
+
     <header>
-    <H2>About Me</H2>
-    
-    
-    <section>
-        <p>
-            I work at a company called Xenex. We build robots that disinfect hospitals. <br>
-            I currently manage the SQA team for our web application and device user interface. <br>
-        </p>
-    </section>
+        <H2>About Me</H2>
+
+
+        <section>
+            <p>
+                I work at a company called Xenex. We build robots that disinfect hospitals. <br>
+                I currently manage the SQA team for our web application and device user interface. <br>
+            </p>
+        </section>
     </header>
 
     <figure>
@@ -66,7 +372,7 @@
             <input type="submit" name="submit" id="submit"><br><br>
         </form>
     </header>
-    
+
 
     <header>
         <H2>Comments</H2>
@@ -77,9 +383,10 @@
 
     <footer>
         <p>Auther: Dominic Prestia</p>
-    </footer>
+    </footer> -->
 
 
 
 </body>
+
 </html>
